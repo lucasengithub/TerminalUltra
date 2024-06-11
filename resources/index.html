@@ -1,27 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>NeutralinoJs sample app</title>
-    <link rel="stylesheet" href="/styles.css">
-  </head>
-  <body>
-    <div id="neutralinoapp">
-      <h1>NeutralinoJs</h1>
-      <div id="info"></div>
-      <br/>
-      <img src="/icons/logo.gif" alt="Neutralinojs" />
-      <div>
-        <a href="#" onclick="openDocs();">Docs</a> &middot;  
-        <a href="#" onclick="openTutorial();">Video tutorial</a>
-      </div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+  <div id="sidebar">
+    <img src="icons/logo.png" alt="Logo" id="logo" height="80px">
+
+    <h1>
+      Terminal
+      Ultra
+    </h1>
+    <div class="card">
+      Portapapeles
     </div>
-    <!-- Neutralino.js client. This file is gitignored, 
-        because `neu update` typically downloads it.
-        Avoid copy-pasting it. 
-        -->
-    <script src="/js/neutralino.js"></script>
-    <!-- Your app's source files -->
-    <script src="/js/main.js"></script>
-  </body>
+    <div class="card">
+        Perfil
+    </div>
+    <div class="card">
+        Configuración
+    </div>
+    <div class="card">
+        Buscar
+    </div>
+
+    <div class="tabs">
+      <div class="card">
+        fish
+      </div>
+      <div class="card">
+        bash
+      </div>
+      <div class="card">
+        pacman
+      </div>
+
+    </div>
+
+
+  
+
+
+  </div>
+  <div class="card" id="ntab">
+    + Pestaña
+  </div>
+  <div id="terminal"></div>
+  
+</body>
+<script src="node_modules/xterm/lib/xterm.js"></script>
+<script src="js/neutralino.js"></script>
+<script src="js/main.js"></script>
+
 </html>
